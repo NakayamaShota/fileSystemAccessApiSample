@@ -8,6 +8,9 @@ let month = params.get('month');
 
 if(year === null || month === null){
   let d = new Date();
+  //固定月(sample用)
+  d = new Date(2022,3 - 1);
+
   year = d.getFullYear();
   month = d.getMonth() + 1;
 }
